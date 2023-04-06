@@ -20,7 +20,7 @@
 
 
      const UpdateTime=()=>{
-        let isPM= false
+        
         let time= new Date(); 
         let hours=time.getHours();
         let min=time.getMinutes();
@@ -30,7 +30,7 @@
     
         clock.innerHTML=`${hours>12? hours-12:hours}:${min}:${sec} ${hours>12?"PM":"AM"}` ;
 
-        console.log(sec);
+       
      }
       setInterval(UpdateTime,1000)
     </script>

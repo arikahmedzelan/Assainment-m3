@@ -1,0 +1,18 @@
+Netlify Link : https://642efa1371979e127d1d1892--joyful-sable-ad21f8.netlify.app/
+----------------------------------------------------------------------------------------------------------------
+Assigment Overview:
+
+1.firstly I create a HTML and CSS file
+2.after that, in the index.html file, i wrote html tag, which contain two tags, named as <head/> and <body/>
+3. in the head tag i imported my css link ref.
+4. after that, in the body tag . i write two tags, named as <div> and <script>
+5. in this <div> tag i created another div for my Digital Clock. and write its id and classname for identification.
+
+---JS Part---- 
+6. in the script tag , i have created a function named "UpdateTime", which get the current time . in this function i declare a instance of Date() object. 
+
+7. after that , i got hours, minute , sec by calling getHours, getMinitues, getSeconds function
+
+8. then i target the div element , by document.gelElementbyId
+9. then render the hours, minute , second by using  InnerHTML
+10. in render time i use conditional rendering , for 12h formate timing
