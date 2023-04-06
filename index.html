@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <link rel="stylesheet" href="style.css" ></link>
+</head>
+<body>
+
+    <div>
+
+        <div id="MyClockDisplay" class="clock"></div>
+
+
+    </div>
+
+    <script>
+
+
+     const UpdateTime=()=>{
+        let isPM= false
+        let time= new Date(); 
+        let hours=time.getHours();
+        let min=time.getMinutes();
+        let sec=time.getSeconds();
+
+        const clock=document.getElementById("MyClockDisplay");
+    
+        clock.innerHTML=`${hours>12? hours-12:hours}:${min}:${sec} ${hours>12?"PM":"AM"}` ;
+
+        console.log(sec);
+     }
+      setInterval(UpdateTime,1000)
+    </script>
+    
+</body>
+</html>
